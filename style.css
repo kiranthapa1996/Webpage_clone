@@ -1,0 +1,116 @@
+/* styles.css */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4; /* Light background color */
+    color: #333; /* Dark text color */
+}
+
+header {
+    background: #333; /* Dark background for header */
+    color: #fff; /* Light text color */
+    width: 100%;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 1rem;
+    padding-right: 30px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #f4f4f4; /* Slightly lighter color on hover */
+}
+
+main {
+    margin-top: 4rem; /* Account for fixed header */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero {
+    background: url('https://media.licdn.com/dms/image/D5612AQHCQRxS1miQvA/article-cover_image-shrink_720_1280/0/1693463807410?e=2147483647&v=beta&t=Bbs7g7-1bhDHfR6WS82Axsr1Zy-cw0PKqFnKR71qSWw') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-content {
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
